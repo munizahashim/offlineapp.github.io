@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web App</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+
+    <p>This is a basic HTML web app.</p>
+
+    <button id="changeTextButton">Click me!</button>
+
+    <p id="changeableText">Text will change here.</p>
+
+    <script>
+        // JavaScript to change the text when the button is clicked
+        document.getElementById("changeTextButton").addEventListener("click", function () {
+            document.getElementById("changeableText").textContent = "Text has been changed!";
+        });
+    </script>
+</body>
+</html>
